@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: da852fbe7ed9f224c816b551d1a6360c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PadUI-4
+    21300002: PadUI-4_0
+    21300004: PadUI-4_1
+    21300006: PadUI-4_2
+    21300008: PadUI-4_3
+    21300010: PadUI-4_4
+    21300012: PadUI-4_5
+    21300014: PadUI-4_6
+    21300016: PadUI-4_7
+    21300018: PadUI-4_8
+    21300020: PadUI-4_9
+    21300022: PadUI-4_10
+    21300024: PadUI-4_11
+    21300026: PadUI-4_12
+    21300028: PadUI-4_13
+    21300030: PadUI-4_14
+    21300032: PadUI-4_15
+    21300034: PadUI-4_16
+    21300036: PadUI-4_17
+    21300038: PadUI-4_18
+    21300040: PadUI-4_19
+    21300042: PadUI-4_20
+    21300044: PadUI-4_21
+    21300046: PadUI-4_22
+    21300048: PadUI-4_23
+    21300050: PadUI-4_24
+    21300052: PadUI-4_25
+    21300054: PadUI-4_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: PadUI-4_0
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 924
+        width: 211
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_1
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 982
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_2
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 984
+        width: 176
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_3
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 969
+        width: 228
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_4
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 838
+        width: 139
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_5
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 975
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_6
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 975
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_7
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 969
+        width: 18
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_8
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 969
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_9
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 907
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_10
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 512
+        width: 46
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_11
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 512
+        width: 44
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_12
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 726
+        width: 70
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_13
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 635
+        width: 78
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 460
+        width: 394
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_15
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 459
+        width: 360
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_16
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 534
+        width: 67
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 315
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_18
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 136
+        width: 340
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_19
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 359
+        width: 65
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_20
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 0
+        width: 265
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_21
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 267
+        width: 78
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_22
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 167
+        width: 65
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 362
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_24
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 22
+        width: 113
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_25
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 15
+        width: 202
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PadUI-4_26
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 15
+        width: 29
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

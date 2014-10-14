@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\level7\background7.cs">
+    <Files>
+      <File FileName="Assets\script\level7\background7.cs" Line="145" Column="38" />
+      <File FileName="Assets\script\level7\LevelMap7.cs" Line="26" Column="43" />
+      <File FileName="Assets\script\level7\hero7.cs" Line="108" Column="37" />
+      <File FileName="Assets\script\level7\monkey7.cs" Line="31" Column="33" />
+      <File FileName="Assets\script\level1\background.cs" Line="138" Column="45" />
+      <File FileName="Assets\script\level1\hero.cs" Line="103" Column="31" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
