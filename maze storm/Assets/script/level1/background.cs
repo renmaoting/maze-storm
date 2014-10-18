@@ -18,6 +18,8 @@ public class background : MonoBehaviour {
 	public Texture2D againImage;//
 	public Texture2D mainImage;//
 	public GameObject rock;//要放下的障碍物
+	public GameObject grass;//要放下的障碍物
+	public GameObject tree;//要放下的障碍物
 	public Initmap level1 = new Initmap();
 	public hero heroscript;//调用脚本background中的地图
 	public money moneyscript;
@@ -41,11 +43,31 @@ public class background : MonoBehaviour {
 
 
 		level1.Initial ();
+		InitBgSrc();//动态加载物体
 		GameObject heroobj = GameObject.Find ("hero"); //调用脚本background中的地图
 		heroscript = (hero)heroobj.GetComponent (typeof(hero));
 
 		GameObject moneyobj = GameObject.Find ("enemy"); //调用脚本background中的地图
 		moneyscript = (money)moneyobj.GetComponent (typeof(money));
+	}
+	void InitBgSrc()//动态添加物体
+	{
+		for (int i =0; i< 14; i++) {//初始化地图是否可走
+			for (int j =0; j< 10; j++) {
+				if(level1.map [i, j]== 1)
+				{
+					GameObject down = Instantiate(grass,new Vector2(i*64+32,j*64+32),Quaternion.Euler(new Vector3(0,0,0))) as GameObject;
+				}
+				else if(level1.map [i, j]== 2)
+				{
+					GameObject down = Instantiate(tree,new Vector2(i*64+32,j*64+32),Quaternion.Euler(new Vector3(0,0,0))) as GameObject;
+				}
+				else if(level1.map [i, j]== 3)
+				{
+					GameObject down = Instantiate(rock,new Vector2(i*64+32,j*64+32),Quaternion.Euler(new Vector3(0,0,0))) as GameObject;
+				}
+			}
+		}
 	}
 	void OnGUI()
 	{
@@ -102,7 +124,7 @@ public class background : MonoBehaviour {
 		int value = level1.GetMapValue ((int)x, (int)y);
 		if(value == 0)
 		{
-			level1.SetMap((int)x,(int)y,2);//设置地图
+			level1.SetMap((int)x,(int)y,4);//设置地图
 			heroscript.InitGame();
 			moneyscript.InitGame();
 			//如果此处放下物体后路无法走通，则不可放
@@ -119,7 +141,6 @@ public class background : MonoBehaviour {
 			{
 				level1.SetMap((int)x,(int)y,0);//设置地图
 			}
-
 		}
 	}
 
