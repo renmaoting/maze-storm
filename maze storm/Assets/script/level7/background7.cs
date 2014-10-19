@@ -4,6 +4,7 @@ using System;
 
 public class background7 : MonoBehaviour {
 	public int level = 7;//本关是第一关,每次必须初始化
+	public int avalueblock = 100;//可用的障碍物的块数
 
 
 	// Use this for initialization
@@ -65,6 +66,7 @@ public class background7 : MonoBehaviour {
 				else if(level7.map [i, j]== 3)
 				{
 					GameObject down = Instantiate(rock,new Vector2(i*64+32,j*64+32),Quaternion.Euler(new Vector3(0,0,0))) as GameObject;
+					avalueblock--;
 				}
 			}
 		}
@@ -72,7 +74,8 @@ public class background7 : MonoBehaviour {
 	void OnGUI()
 	{
 		Vector2 container = Camera.main.WorldToScreenPoint(new Vector2(1090,470));//以容器参照物
-		GUI.Label(new Rect(container.x-160,container.y -265,200,100),"分数:" + Sco,aa);
+		GUI.Label(new Rect(container.x-100,container.y -280,200,100),""+Sco,aa);
+		GUI.Label(new Rect(container.x-60,container.y -225,200,100),""+avalueblock,aa);
 
 		vec.x = x * 64;
 		vec.y = (9 - y) * 64;
@@ -131,10 +134,10 @@ public class background7 : MonoBehaviour {
 			if(heroscript.astar.findPath(heroscript.grid) == true && moneyscript.astar.findPath(moneyscript.grid) == true)
 			{
 				//游戏还没开始的时候才可以放物体
-				if(heroscript.walk == false && heroscript.finish == false && moneyscript.walk == false && moneyscript.finish == false)
+				if(heroscript.walk == false && heroscript.finish == false && moneyscript.walk == false && moneyscript.finish == false && avalueblock > 0)
 				{
 					GameObject down = Instantiate(rock,new Vector2(x*64+32,y*64+32),Quaternion.Euler(new Vector3(0,0,0))) as GameObject;
-			
+					avalueblock--;
 				}
 			}
 			else
@@ -157,7 +160,7 @@ public class background7 : MonoBehaviour {
 	IEnumerator LoadNextScene()//next stage
 	{
 		yield return new WaitForSeconds(1);
-		asyn = Application.LoadLevelAsync ("level2");
+		asyn = Application.LoadLevelAsync ("level8");
 		yield return new WaitForSeconds(1);
 	}
 	IEnumerator LoadCurrentScene()//try again

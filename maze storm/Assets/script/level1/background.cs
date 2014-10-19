@@ -4,10 +4,11 @@ using System;
 
 public class background : MonoBehaviour {
 	public int level = 1;//本关是第一关,每次必须初始化
+	public int avalueblock = 100;//可用的障碍物的块数
 
 
 	// Use this for initialization
-	public int Sco = 0;//到达本关的分数 
+	public int sco = 0;//到达本关的分数 
 	private Vector2 mousepos;
 	private Vector2 vec;//鼠标的世界坐标
 	private Vector2 vec_screen;//转换成屏幕坐标
@@ -28,7 +29,7 @@ public class background : MonoBehaviour {
 
 	void Start () {
 		for (int i =1; i< level; i++) {
-			Sco+=i*100;
+			sco+=i*100;
 		}
 
 		bb = new GUIStyle();
@@ -72,7 +73,8 @@ public class background : MonoBehaviour {
 	void OnGUI()
 	{
 		Vector2 container = Camera.main.WorldToScreenPoint(new Vector2(1090,470));//以容器参照物
-		GUI.Label(new Rect(container.x-160,container.y -265,200,100),"分数:" + Sco,aa);
+		GUI.Label(new Rect(container.x-100,container.y -280,200,100),""+sco,aa);
+		GUI.Label(new Rect(container.x-60,container.y -225,200,100),""+avalueblock,aa);
 
 		vec.x = x * 64;
 		vec.y = (9 - y) * 64;
@@ -134,7 +136,7 @@ public class background : MonoBehaviour {
 				if(heroscript.walk == false && heroscript.finish == false && moneyscript.walk == false && moneyscript.finish == false)
 				{
 					GameObject down = Instantiate(rock,new Vector2(x*64+32,y*64+32),Quaternion.Euler(new Vector3(0,0,0))) as GameObject;
-			
+					avalueblock--;
 				}
 			}
 			else

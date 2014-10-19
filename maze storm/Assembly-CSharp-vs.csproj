@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{198AF6B6-ACD0-1022-2095-3837BF2CDCFC}</ProjectGuid>
+	<ProjectGuid>{4D04332F-1D80-D6F6-1456-126DCB937837}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -187,13 +187,49 @@
      <Compile Include="Assets\script\level1\background.cs" />
      <Compile Include="Assets\script\level1\hero.cs" />
      <Compile Include="Assets\script\level1\money.cs" />
+     <Compile Include="Assets\script\level1\rockclick.cs" />
+     <Compile Include="Assets\script\level10\LevelMap10.cs" />
+     <Compile Include="Assets\script\level10\background10.cs" />
+     <Compile Include="Assets\script\level10\hero10.cs" />
+     <Compile Include="Assets\script\level10\monkey10.cs" />
+     <Compile Include="Assets\script\level10\rockclick10.cs" />
+     <Compile Include="Assets\script\level11\LevelMap11.cs" />
+     <Compile Include="Assets\script\level11\background11.cs" />
+     <Compile Include="Assets\script\level11\hero11.cs" />
+     <Compile Include="Assets\script\level11\monkey11.cs" />
+     <Compile Include="Assets\script\level11\rockclick11.cs" />
+     <Compile Include="Assets\script\level12\LevelMap12.cs" />
+     <Compile Include="Assets\script\level12\background12.cs" />
+     <Compile Include="Assets\script\level12\hero12.cs" />
+     <Compile Include="Assets\script\level12\monkey12.cs" />
+     <Compile Include="Assets\script\level12\rockclick12.cs" />
+     <Compile Include="Assets\script\level13\LevelMap13.cs" />
+     <Compile Include="Assets\script\level13\background13.cs" />
+     <Compile Include="Assets\script\level13\hero13.cs" />
+     <Compile Include="Assets\script\level13\monkey13.cs" />
+     <Compile Include="Assets\script\level13\rockclick13.cs" />
+     <Compile Include="Assets\script\level14\LevelMap14.cs" />
+     <Compile Include="Assets\script\level14\background14.cs" />
+     <Compile Include="Assets\script\level14\hero14.cs" />
+     <Compile Include="Assets\script\level14\monkey14.cs" />
+     <Compile Include="Assets\script\level14\rockclick14.cs" />
      <Compile Include="Assets\script\level7\LevelMap7.cs" />
      <Compile Include="Assets\script\level7\background7.cs" />
      <Compile Include="Assets\script\level7\hero7.cs" />
      <Compile Include="Assets\script\level7\monkey7.cs" />
+     <Compile Include="Assets\script\level7\rockclick7.cs" />
+     <Compile Include="Assets\script\level8\LevelMap8.cs" />
+     <Compile Include="Assets\script\level8\background8.cs" />
+     <Compile Include="Assets\script\level8\hero8.cs" />
+     <Compile Include="Assets\script\level8\monkey8.cs" />
+     <Compile Include="Assets\script\level8\rockclick8.cs" />
+     <Compile Include="Assets\script\level9\LevelMap9.cs" />
+     <Compile Include="Assets\script\level9\background9.cs" />
+     <Compile Include="Assets\script\level9\hero9.cs" />
+     <Compile Include="Assets\script\level9\monkey9.cs" />
+     <Compile Include="Assets\script\level9\rockclick9.cs" />
      <Compile Include="Assets\script\login\start.cs" />
-     <Compile Include="Assets\source\Prefabs\rockclick.cs" />
-     <Compile Include="Assets\source\Prefabs\startscript.cs" />
+     <Compile Include="Assets\script\startscript.cs" />
      <None Include="Assets\inlet\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\inlet\NGUI\ReadMe - 3.7.2.txt" />
      <None Include="Assets\inlet\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
