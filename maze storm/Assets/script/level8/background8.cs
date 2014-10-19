@@ -74,8 +74,8 @@ public class background8 : MonoBehaviour {
 	void OnGUI()
 	{
 		Vector2 container = Camera.main.WorldToScreenPoint(new Vector2(1090,470));//以容器参照物
-		GUI.Label(new Rect(container.x-100,container.y -280,200,100),""+sco,aa);
-		GUI.Label(new Rect(container.x-60,container.y -225,200,100),""+avalueblock,aa);
+		GUI.Label(new Rect(container.x-180,container.y -280,200,100),"得分："+sco,aa);
+		GUI.Label(new Rect(container.x-180,container.y -225,200,100),"剩余障碍："+avalueblock,aa);
 
 		vec.x = x * 64;
 		vec.y = (9 - y) * 64;

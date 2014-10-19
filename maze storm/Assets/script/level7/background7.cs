@@ -8,7 +8,7 @@ public class background7 : MonoBehaviour {
 
 
 	// Use this for initialization
-	public int Sco = 0;//到达本关的分数 
+	public int sco = 0;//到达本关的分数 
 	private Vector2 mousepos;
 	private Vector2 vec;//鼠标的世界坐标
 	private Vector2 vec_screen;//转换成屏幕坐标
@@ -29,7 +29,7 @@ public class background7 : MonoBehaviour {
 
 	void Start () {
 		for (int i =1; i< level; i++) {
-			Sco+=i*100;
+			sco+=i*100;
 		}
 
 		bb = new GUIStyle();
@@ -74,8 +74,8 @@ public class background7 : MonoBehaviour {
 	void OnGUI()
 	{
 		Vector2 container = Camera.main.WorldToScreenPoint(new Vector2(1090,470));//以容器参照物
-		GUI.Label(new Rect(container.x-100,container.y -280,200,100),""+Sco,aa);
-		GUI.Label(new Rect(container.x-60,container.y -225,200,100),""+avalueblock,aa);
+		GUI.Label(new Rect(container.x-180,container.y -280,200,100),"得分："+sco,aa);
+		GUI.Label(new Rect(container.x-180,container.y -225,200,100),"剩余障碍："+avalueblock,aa);
 
 		vec.x = x * 64;
 		vec.y = (9 - y) * 64;
