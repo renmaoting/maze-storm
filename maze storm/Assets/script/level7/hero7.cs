@@ -25,12 +25,13 @@ public class hero7 : MonoBehaviour {
 
 		GameObject moneyobj = GameObject.Find ("enemy"); //调用脚本background中的地图
 		monkeyscript = (monkey7)moneyobj.GetComponent (typeof(monkey7));
+
+		astar = new AStar();
+		animator = GetComponent<Animator> ();
+		hasdone = 1;
 	}
 	public void InitGame()//初始化寻路网格
 	{
-		hasdone = 1;
-		astar = new AStar();
-		animator = GetComponent<Animator> ();
 		for (int i =0; i< 14; i++) {//初始化地图是否可走
 			for (int j =0; j< 10; j++) {
 				if(bg.level7.map [i, j]!= 0)

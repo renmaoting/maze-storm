@@ -73,6 +73,7 @@ public class background7 : MonoBehaviour {
 	}
 	void OnGUI()
 	{
+		Debug.Log ("x:" + x +" "+ y);
 		Vector2 container = Camera.main.WorldToScreenPoint(new Vector2(1090,470));//以容器参照物
 		GUI.Label(new Rect(container.x-180,container.y -280,200,100),"得分："+sco,aa);
 		GUI.Label(new Rect(container.x-180,container.y -225,200,100),"剩余障碍："+avalueblock,aa);
@@ -125,9 +126,10 @@ public class background7 : MonoBehaviour {
 
 	void OnMouseDown (){
 		int value = level7.GetMapValue ((int)x, (int)y);
+		Debug.Log ("x:" + x +" "+ y);
 		if(value == 0)
 		{
-			level7.SetMap((int)x,(int)y,2);//设置地图
+			level7.SetMap((int)x,(int)y,4);//设置地图
 			heroscript.InitGame();
 			moneyscript.InitGame();
 			//如果此处放下物体后路无法走通，则不可放
