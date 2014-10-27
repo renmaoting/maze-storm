@@ -34,8 +34,8 @@ public class monkey12 : MonoBehaviour {
 					grid.SetWalkbale(i,j,true);
 			}
 		}
-		grid.SetStartNode (5,3);
-		grid.SetEndNode (7,7);
+		grid.SetStartNode (4,5);
+		grid.SetEndNode (10,2);
 	}
 
 	void FixedUpdate()

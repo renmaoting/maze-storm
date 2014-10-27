@@ -39,8 +39,8 @@ public class hero12 : MonoBehaviour {
 					grid.SetWalkbale(i,j,true);
 			}
 		}
-		grid.SetStartNode (7,0);
-		grid.SetEndNode (7,7);
+		grid.SetStartNode (4,8);
+		grid.SetEndNode (10,2);
 	}
 
 	void FixedUpdate()
