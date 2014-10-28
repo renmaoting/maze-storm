@@ -70,22 +70,12 @@ public class background2 : MonoBehaviour {
 				}
 			}
 		}
-		Instantiate(tree,new Vector2(6*64+32,9*64+32),Quaternion.Euler(new Vector3(0,0,0)));
-		Instantiate(tree,new Vector2(7*64+32,9*64+32),Quaternion.Euler(new Vector3(0,0,0)));
-		Instantiate(tree,new Vector2(8*64+32,9*64+32),Quaternion.Euler(new Vector3(0,0,0)));
-		Instantiate(tree,new Vector2(9*64+32,9*64+32),Quaternion.Euler(new Vector3(0,0,0)));
-		Instantiate(tree,new Vector2(9*64+32,8*64+32),Quaternion.Euler(new Vector3(0,0,0)));
-		Instantiate(tree,new Vector2(9*64+32,7*64+32),Quaternion.Euler(new Vector3(0,0,0)));
-		Instantiate(tree,new Vector2(6*64+32,7*64+32),Quaternion.Euler(new Vector3(0,0,0)));
-		Instantiate(tree,new Vector2(7*64+32,7*64+32),Quaternion.Euler(new Vector3(0,0,0)));
-		Instantiate(tree,new Vector2(8*64+32,7*64+32),Quaternion.Euler(new Vector3(0,0,0)));
 	}
 	void OnGUI()
 	{
-		Debug.Log ("x:" + x +" "+ y);
-		Vector2 container = Camera.main.WorldToScreenPoint(new Vector2(1090,470));//以容器参照物
-		GUI.Label(new Rect(container.x-180,container.y -280,200,100),"得分："+sco,aa);
-		GUI.Label(new Rect(container.x-180,container.y -225,200,100),"剩余障碍："+avalueblock,aa);
+		Vector2 container = Camera.main.WorldToScreenPoint(new Vector2(1090,0));//以容器参照物
+		GUI.Label(new Rect(container.x-180,container.y,200,100),"关卡："+level,aa);
+		GUI.Label(new Rect(container.x-180,container.y +70,200,100),"剩余障碍："+avalueblock,aa);
 
 		vec.x = x * 64;
 		vec.y = (9 - y) * 64;

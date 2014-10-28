@@ -69,8 +69,6 @@ public class hero13 : MonoBehaviour {
 		}
 		if (hasdone >= astar._path.Count) 
 		{
-			if(finish == false)
-				bg.sco+= bg.level*100;
 			finish = true;
 			walk = false;
 			transform.localScale = new Vector3(0,0,0);

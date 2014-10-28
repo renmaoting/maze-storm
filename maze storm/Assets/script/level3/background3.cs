@@ -3,7 +3,7 @@ using System.Collections;
 using System;
 
 public class background3 : MonoBehaviour {
-	private int level = 2;//本关是第一关,每次必须初始化
+	private int level = 3;//本关是第一关,每次必须初始化
 	public int avalueblock = 100;//可用的障碍物的块数
 
 
@@ -73,10 +73,9 @@ public class background3 : MonoBehaviour {
 	}
 	void OnGUI()
 	{
-		Debug.Log ("x:" + x +" "+ y);
-		Vector2 container = Camera.main.WorldToScreenPoint(new Vector2(1090,470));//以容器参照物
-		GUI.Label(new Rect(container.x-180,container.y -280,200,100),"得分："+sco,aa);
-		GUI.Label(new Rect(container.x-180,container.y -225,200,100),"剩余障碍："+avalueblock,aa);
+		Vector2 container = Camera.main.WorldToScreenPoint(new Vector2(1090,0));//以容器参照物
+		GUI.Label(new Rect(container.x-180,container.y,200,100),"关卡："+level,aa);
+		GUI.Label(new Rect(container.x-180,container.y +70,200,100),"剩余障碍："+avalueblock,aa);
 
 		vec.x = x * 64;
 		vec.y = (9 - y) * 64;
@@ -162,7 +161,7 @@ public class background3 : MonoBehaviour {
 	IEnumerator LoadNextScene()//next stage
 	{
 		yield return new WaitForSeconds(1);
-		asyn = Application.LoadLevelAsync ("level8");
+		asyn = Application.LoadLevelAsync ("level4");
 		yield return new WaitForSeconds(1);
 	}
 	IEnumerator LoadCurrentScene()//try again
