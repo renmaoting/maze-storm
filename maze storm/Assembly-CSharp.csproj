@@ -263,6 +263,7 @@
      <Compile Include="Assets\script\level9\hero9.cs" />
      <Compile Include="Assets\script\level9\monkey9.cs" />
      <Compile Include="Assets\script\level9\rockclick9.cs" />
+     <Compile Include="Assets\script\login\exit.cs" />
      <Compile Include="Assets\script\login\start.cs" />
      <Compile Include="Assets\script\startscript.cs" />
      <None Include="Assets\inlet\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />

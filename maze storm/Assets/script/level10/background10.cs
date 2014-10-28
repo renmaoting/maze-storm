@@ -118,7 +118,6 @@ public class background10 : MonoBehaviour {
 			{
 				StartCoroutine ("LoadMainScene");
 			}
-
 		}
 	}
 
@@ -126,21 +125,17 @@ public class background10 : MonoBehaviour {
 		int value = level10.GetMapValue ((int)x, (int)y);
 		if(value == 0)
 		{
-			level10.SetMap((int)x,(int)y,2);//设置地图
-			heroscript.InitGame();
-			moneyscript.InitGame();
-			//如果此处放下物体后路无法走通，则不可放
-			if(heroscript.walk == false && heroscript.finish == false && moneyscript.walk == false && moneyscript.finish == false
-			   && heroscript.astar.findPath(heroscript.grid) == true && moneyscript.astar.findPath(moneyscript.grid) == true && avalueblock > 0)
-			{
-				GameObject down = Instantiate(rock,new Vector2(x*64+32,y*64+32),Quaternion.Euler(new Vector3(0,0,0))) as GameObject;
-				avalueblock--;
+			if (heroscript.walk == false && heroscript.finish == false && moneyscript.walk == false && moneyscript.finish == false) {
+				level10.SetMap ((int)x, (int)y, 2);//设置地图
+				heroscript.InitGame ();
+				moneyscript.InitGame ();
+				if (heroscript.astar.findPath (heroscript.grid) == true && moneyscript.astar.findPath (moneyscript.grid) == true && avalueblock > 0) {
+					GameObject down = Instantiate (rock, new Vector2 (x * 64 + 32, y * 64 + 32), Quaternion.Euler (new Vector3 (0, 0, 0))) as GameObject;
+					avalueblock--;
+				} else {
+					level10.SetMap ((int)x, (int)y, 0);//设置地图
+				}
 			}
-			else
-			{
-				level10.SetMap((int)x,(int)y,0);//设置地图
-			}
-
 		}
 	}
 

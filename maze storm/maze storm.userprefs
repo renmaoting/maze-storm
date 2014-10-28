@@ -1,12 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\level10\background10.cs">
-    <Files>
-      <File FileName="Assets\script\level1\background.cs" Line="133" Column="4" />
-      <File FileName="Assets\script\level10\background10.cs" Line="138" Column="5" />
-      <File FileName="Assets\script\level11\background11.cs" Line="133" Column="64" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
