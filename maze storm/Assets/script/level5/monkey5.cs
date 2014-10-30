@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class monkey5 : MonoBehaviour {
-	public float speed = 100f;//英雄速度
+	public float speed = 110f;//英雄速度
 	public Vector2 current_position;
 	Animator animator;
 	public Grid grid = new Grid(14,10);
