@@ -152,7 +152,7 @@ public class background9 : MonoBehaviour {
 	IEnumerator LoadNextScene()//next stage
 	{
 		yield return new WaitForSeconds(1);
-		asyn = Application.LoadLevelAsync ("level10");
+		asyn = Application.LoadLevelAsync ("level6");
 		yield return new WaitForSeconds(1);
 	}
 	IEnumerator LoadCurrentScene()//try again
