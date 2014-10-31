@@ -25,6 +25,9 @@ public class hero10 : MonoBehaviour {
 
 		GameObject moneyobj = GameObject.Find ("enemy"); //调用脚本background中的地图
 		monkeyscript = (monkey10)moneyobj.GetComponent (typeof(monkey10));
+
+		GameObject startspt = GameObject.Find ("startbtn"); //调用脚本background中的地图
+		stspt = (startscript)startspt.GetComponent (typeof(startscript));
 	}
 	public void InitGame()//初始化寻路网格
 	{

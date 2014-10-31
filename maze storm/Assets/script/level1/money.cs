@@ -14,11 +14,15 @@ public class money : MonoBehaviour {
 	private bool findroad = false;//是否找到路径
 	private int hasdone; //已经走过的寻路结点
 	public background bg;//调用脚本background中的地图
+	public startscript stspt;//开始脚本
 	
 	// Use this for initialization
 	void Start () {
 		GameObject backgd = GameObject.Find ("background"); //调用脚本background中的地图
 		bg = (background)backgd.GetComponent (typeof(background));
+
+		GameObject startspt = GameObject.Find ("startbtn"); //调用脚本background中的地图
+		stspt = (startscript)startspt.GetComponent (typeof(startscript));
 	}
 
 	public void InitGame()//初始化寻路网格

@@ -189,6 +189,7 @@
      <Compile Include="Assets\script\level1\hero.cs" />
      <Compile Include="Assets\script\level1\money.cs" />
      <Compile Include="Assets\script\level1\rockclick.cs" />
+     <Compile Include="Assets\script\level1\startrun.cs" />
      <Compile Include="Assets\script\level1\tryagain.cs" />
      <Compile Include="Assets\script\level10\LevelMap10.cs" />
      <Compile Include="Assets\script\level10\background10.cs" />
