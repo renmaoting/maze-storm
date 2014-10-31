@@ -22,7 +22,7 @@ public class start : MonoBehaviour {
 	IEnumerator LoadMainScene()
 	{
 		yield return new WaitForSeconds(1);
-		asyn = Application.LoadLevelAsync ("level1");
+		asyn = Application.LoadLevelAsync ("selectlevel");
 		yield return new WaitForSeconds(1);
 	}
 }

@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\level4\background4.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\login\about.cs">
     <Files>
-      <File FileName="Assets\script\level4\background4.cs" Line="156" Column="47" />
+      <File FileName="Assets\script\selectlevel\select_1.cs" Line="5" Column="1" />
+      <File FileName="Assets\script\selectlevel\select_login.cs" Line="22" Column="47" />
+      <File FileName="Assets\script\login\about.cs" Line="12" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
