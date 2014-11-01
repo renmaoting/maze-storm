@@ -60,7 +60,7 @@ public class monkey7 : MonoBehaviour {
 				hasdone++;
 			}
 		}
-		if (hasdone >= astar._path.Count) 
+		if (astar!=null && hasdone >= astar._path.Count) 
 		{
 			finish = true;
 			walk = false;

@@ -77,41 +77,22 @@ public class hero4 : MonoBehaviour {
 	}
 	void TurnRight()//向右转弯的时候打开所有通向右方向的动画和关闭从右出去的动画
 	{
-		animator.SetInteger ("sftorr", 1);
-		animator.SetInteger ("srtorr", 1);
-		animator.SetInteger ("rbtorr", 1);
-		animator.SetInteger ("rftorr", 1);
-		animator.SetInteger ("rrtorb", 0);
-		animator.SetInteger ("rrtorf", 0);
+		animator.Play ("run_right");
 	}
-
+	
 	void TurnLeft()
 	{
-		animator.SetInteger ("sftorl", 1);
-		animator.SetInteger ("sltorl", 1);
-		animator.SetInteger ("rbtorl", 1);
-		animator.SetInteger ("rftorl", 1);
-		animator.SetInteger ("rltorb", 0);
-		animator.SetInteger ("rltorf", 0);
+		animator.Play ("run_left");
 	}
-
+	
 	void TurnBack()
 	{
-		animator.SetInteger ("sftorb", 1);
-		animator.SetInteger ("sbtorb", 1);
-		animator.SetInteger ("rrtorb", 1);
-		animator.SetInteger ("rltorb", 1);
-		animator.SetInteger ("rbtorl", 0);
-		animator.SetInteger ("rbtorr", 0);
+		animator.Play ("run_back");
 	}
-
+	
 	void TurnFront()
 	{
-		animator.SetInteger ("sftorf", 1);
-		animator.SetInteger ("rrtorf", 1);
-		animator.SetInteger ("rltorf", 1);
-		animator.SetInteger ("rftorr", 0);
-		animator.SetInteger ("rftorl", 0);
+		animator.Play ("run_front");
 	}
 
 	void GoRight(Vector2 CurPos)
