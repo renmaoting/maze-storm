@@ -77,7 +77,6 @@ public class hero : MonoBehaviour {
 	void TurnRight()//向右转弯的时候打开所有通向右方向的动画和关闭从右出去的动画
 	{
 		animator.SetInteger ("sftorr", 1);
-		animator.SetInteger ("srtorr", 1);
 		animator.SetInteger ("rbtorr", 1);
 		animator.SetInteger ("rftorr", 1);
 		animator.SetInteger ("rrtorb", 0);
@@ -87,7 +86,6 @@ public class hero : MonoBehaviour {
 	void TurnLeft()
 	{
 		animator.SetInteger ("sftorl", 1);
-		animator.SetInteger ("sltorl", 1);
 		animator.SetInteger ("rbtorl", 1);
 		animator.SetInteger ("rftorl", 1);
 		animator.SetInteger ("rltorb", 0);
@@ -97,7 +95,6 @@ public class hero : MonoBehaviour {
 	void TurnBack()
 	{
 		animator.SetInteger ("sftorb", 1);
-		animator.SetInteger ("sbtorb", 1);
 		animator.SetInteger ("rrtorb", 1);
 		animator.SetInteger ("rltorb", 1);
 		animator.SetInteger ("rbtorl", 0);

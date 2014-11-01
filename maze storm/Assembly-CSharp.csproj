@@ -183,6 +183,11 @@
      <Compile Include="Assets\inlet\astar\Grid.cs" />
      <Compile Include="Assets\inlet\astar\Node.cs" />
      <Compile Include="Assets\inlet\astar\Play.cs" />
+     <Compile Include="Assets\script\globle\MusicPlayer.cs" />
+     <Compile Include="Assets\script\globle\MusicTest.cs" />
+     <Compile Include="Assets\script\globle\globlevar.cs" />
+     <Compile Include="Assets\script\globle\musiccontroller.cs" />
+     <Compile Include="Assets\script\globle\startscript.cs" />
      <Compile Include="Assets\script\level1\Initmap.cs" />
      <Compile Include="Assets\script\level1\background.cs" />
      <Compile Include="Assets\script\level1\backmain.cs" />
@@ -282,6 +287,7 @@
      <Compile Include="Assets\script\level9\tryagain9.cs" />
      <Compile Include="Assets\script\login\about.cs" />
      <Compile Include="Assets\script\login\exit.cs" />
+     <Compile Include="Assets\script\login\help.cs" />
      <Compile Include="Assets\script\login\start.cs" />
      <Compile Include="Assets\script\selectlevel\select_1.cs" />
      <Compile Include="Assets\script\selectlevel\select_10.cs" />
@@ -299,7 +305,6 @@
      <Compile Include="Assets\script\selectlevel\select_8.cs" />
      <Compile Include="Assets\script\selectlevel\select_9.cs" />
      <Compile Include="Assets\script\selectlevel\select_login.cs" />
-     <Compile Include="Assets\script\startscript.cs" />
      <None Include="Assets\inlet\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\inlet\NGUI\ReadMe - 3.7.2.txt" />
      <None Include="Assets\inlet\NGUI\Resources\Shaders\Unlit - Text 2.shader" />

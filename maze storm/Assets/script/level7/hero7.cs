@@ -99,7 +99,6 @@ public class hero7 : MonoBehaviour {
 	void TurnBack()
 	{
 		animator.SetInteger ("sftorb", 1);
-		animator.SetInteger ("sbtorb", 1);
 		animator.SetInteger ("rrtorb", 1);
 		animator.SetInteger ("rltorb", 1);
 		animator.SetInteger ("rbtorl", 0);
@@ -108,11 +107,13 @@ public class hero7 : MonoBehaviour {
 
 	void TurnFront()
 	{
+		animator.SetInteger ("rftorr", 0);
+		animator.SetInteger ("rftorl", 0);
+		animator.SetInteger ("rltorb", 0);
 		animator.SetInteger ("sftorf", 1);
 		animator.SetInteger ("rrtorf", 1);
 		animator.SetInteger ("rltorf", 1);
-		animator.SetInteger ("rftorr", 0);
-		animator.SetInteger ("rftorl", 0);
+
 	}
 
 	void GoRight(Vector2 CurPos)
