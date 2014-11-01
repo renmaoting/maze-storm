@@ -14,7 +14,6 @@ public class hero10 : MonoBehaviour {
 	private bool findroad = false;//是否找到路径
 	private int hasdone; //已经走过的寻路结点
 	public background10 bg;//调用脚本background中的地图
-	public startscript stspt;//开始脚本
 
 	public monkey10 monkeyscript;
 	
@@ -25,9 +24,6 @@ public class hero10 : MonoBehaviour {
 
 		GameObject moneyobj = GameObject.Find ("enemy"); //调用脚本background中的地图
 		monkeyscript = (monkey10)moneyobj.GetComponent (typeof(monkey10));
-
-		GameObject startspt = GameObject.Find ("startbtn"); //调用脚本background中的地图
-		stspt = (startscript)startspt.GetComponent (typeof(startscript));
 	}
 	public void InitGame()//初始化寻路网格
 	{
@@ -48,7 +44,7 @@ public class hero10 : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		if(startscript.click == true && walk == false)
+		if(bg.stspt.click == true && walk == false)
 		//if (Input.GetButton ("Jump"))
 		{//开始键被按下
 			InitGame();
@@ -75,7 +71,7 @@ public class hero10 : MonoBehaviour {
 			finish = true;
 			walk = false;
 			transform.localScale = new Vector3(0,0,0);
-			startscript.click = false;
+			bg.stspt.click = false;
 			//Destroy(gameObject);
 		}
 	}

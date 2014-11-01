@@ -41,7 +41,7 @@ public class monkey12 : MonoBehaviour {
 	void FixedUpdate()
 	{
 		
-		if(startscript.click == true && walk == false) {//开始键被按下
+		if(bg.stspt.click == true && walk == false) {//开始键被按下
 			InitGame();
 			walk = true;
 			if(astar.findPath(grid) == true)
@@ -64,7 +64,7 @@ public class monkey12 : MonoBehaviour {
 		{
 			finish = true;
 			walk = false;
-			startscript.click = false;
+			bg.stspt.click = false;
 			//Destroy(gameObject);
 			transform.localScale = new Vector3(0,0,0);
 		}

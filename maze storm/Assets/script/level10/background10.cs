@@ -24,6 +24,8 @@ public class background10 : MonoBehaviour {
 	public LevelMap10 level10 = new LevelMap10();
 	public hero10 heroscript;//调用脚本background中的地图
 	public monkey10 moneyscript;
+	public startscript stspt;//开始脚本
+
 	GUIStyle bb;
 	GUIStyle aa;
 
@@ -50,6 +52,9 @@ public class background10 : MonoBehaviour {
 
 		GameObject moneyobj = GameObject.Find ("enemy"); //调用脚本background中的地图
 		moneyscript = (monkey10)moneyobj.GetComponent (typeof(monkey10));
+
+		GameObject startspt = GameObject.Find ("startbtn"); //调用脚本background中的地图
+		stspt = (startscript)startspt.GetComponent (typeof(startscript));
 	}
 	void InitBgSrc()//动态添加物体
 	{

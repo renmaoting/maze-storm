@@ -20,9 +20,6 @@ public class money : MonoBehaviour {
 	void Start () {
 		GameObject backgd = GameObject.Find ("background"); //调用脚本background中的地图
 		bg = (background)backgd.GetComponent (typeof(background));
-
-		GameObject startspt = GameObject.Find ("startbtn"); //调用脚本background中的地图
-		stspt = (startscript)startspt.GetComponent (typeof(startscript));
 	}
 
 	public void InitGame()//初始化寻路网格
@@ -45,7 +42,7 @@ public class money : MonoBehaviour {
 	void FixedUpdate()
 	{
 		
-		if(startscript.click == true && walk == false) {//开始键被按下
+		if(bg.stspt.click == true && walk == false) {//开始键被按下
 			InitGame();
 			walk = true;
 			if(astar.findPath(grid) == true)
@@ -68,7 +65,7 @@ public class money : MonoBehaviour {
 		{
 			finish = true;
 			walk = false;
-			startscript.click = false;
+			bg.stspt.click = false;
 			//Destroy(gameObject);
 			transform.localScale = new Vector3(0,0,0);
 		}

@@ -14,7 +14,6 @@ public class hero16 : MonoBehaviour {
 	private bool findroad = false;//是否找到路径
 	private int hasdone; //已经走过的寻路结点
 	public background16 bg;//调用脚本background中的地图
-	public startscript stspt;//开始脚本
 
 	public monkey16 monkeyscript;
 	
@@ -46,7 +45,7 @@ public class hero16 : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		if(startscript.click == true && walk == false)
+		if(bg.stspt.click == true && walk == false)
 		//if (Input.GetButton ("Jump"))
 		{//开始键被按下
 			InitGame();
@@ -73,7 +72,7 @@ public class hero16 : MonoBehaviour {
 			finish = true;
 			walk = false;
 			transform.localScale = new Vector3(0,0,0);
-			startscript.click = false;
+			bg.stspt.click = false;
 			//Destroy(gameObject);
 		}
 	}
