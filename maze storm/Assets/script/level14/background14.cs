@@ -82,13 +82,6 @@ public class background14 : MonoBehaviour {
 		vec.x = x * 64;
 		vec.y = (9 - y) * 64;
 		vec_screen = Camera.main.WorldToScreenPoint (vec);//将鼠标的世界坐标转换成屏幕坐标
-		if (heroscript.walk == false && heroscript.finish == false && moneyscript.walk == false && moneyscript.finish == false) {
-			if(x <= 13 && x >= 0 && y >=0 && y <= 9)
-			{
-				//鼠标跟随的图片
-				GUI.DrawTexture (new Rect (vec_screen.x, vec_screen.y, 64, 64), image1);
-			}
-		}
 
 		if (heroscript.finish == true && moneyscript.finish == false)//you won the game
 		{
