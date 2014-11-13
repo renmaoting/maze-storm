@@ -36,7 +36,7 @@ public class background2 : MonoBehaviour {
 		bb = new GUIStyle();
 		bb.normal.background = null;    //这是设置背景填充的
 		bb.normal.textColor=new Color(1,0,0);   //设置字体颜色的
-		bb.fontSize = 40;       //当然，这是字体颜色
+		bb.fontSize = 50;       //当然，这是字体颜色
 
 		aa = new GUIStyle();
 		aa.normal.background = null;    //这是设置背景填充的
@@ -77,9 +77,11 @@ public class background2 : MonoBehaviour {
 	}
 	void OnGUI()
 	{
-		Vector2 container = Camera.main.WorldToScreenPoint(new Vector2(1090,0));//以容器参照物
-		GUI.Label(new Rect(container.x-180,container.y,200,100),"关卡："+level,aa);
-		GUI.Label(new Rect(container.x-180,container.y +70,200,100),"剩余障碍："+avalueblock,aa);
+		GameObject infoobj = GameObject.Find ("info"); //调用脚本info中的地图
+		Vector2 infopos =  infoobj.transform.position;
+		Vector2 container = Camera.main.WorldToScreenPoint(new Vector2(infopos.x,0));//以容器参照物
+		GUI.Label(new Rect(container.x,container.y,200,100),"关卡："+level,aa);
+		GUI.Label(new Rect(container.x,container.y +70,200,100),"剩余障碍："+avalueblock,aa);
 
 		vec.x = x * 64;
 		vec.y = (9 - y) * 64;
@@ -120,7 +122,7 @@ public class background2 : MonoBehaviour {
 		}
 	}
 
-	void OnMouseDown (){
+	void OnMouseUp (){
 		int value = level2.GetMapValue ((int)x, (int)y);
 		Debug.Log ("x:" + x +" "+ y);
 		if(value == 0)
