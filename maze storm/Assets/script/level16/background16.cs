@@ -25,6 +25,7 @@ public class background16 : MonoBehaviour {
 	public hero16 heroscript;//调用脚本background中的地图
 	public monkey16 moneyscript;
 	public startscript stspt;//开始脚本
+	private MusicPlayer mup;
 	GUIStyle bb;
 	GUIStyle aa;
 
@@ -91,6 +92,14 @@ public class background16 : MonoBehaviour {
 		{
 			Vector2 door = Camera.main.WorldToScreenPoint(new Vector2(480,500));//以传送门为参照物
 			moneyscript.walk = false;
+
+			int temlevel = PlayerPrefs.GetInt ("LEVEL");
+			if( temlevel == level)
+			{
+				temlevel++;
+				PlayerPrefs.SetInt ("LEVEL",temlevel);
+			}
+
 			GUI.Label(new Rect(door.x-100,door.y - 400,200,30),"You Won",bb);
 			if(GUI.Button(new Rect(door.x-100,door.y - 300,190,79),nextImage))
 			{

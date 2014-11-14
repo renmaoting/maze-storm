@@ -2,18 +2,19 @@
 using System.Collections;
 
 public class select_7 : MonoBehaviour {
-
 	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 	void OnMouseDown (){
-		StartCoroutine ("LoadScene");
+		if (PlayerPrefs.GetInt("LEVEL") >= 7) 
+		{
+			StartCoroutine ("LoadScene");
+		}
 	}
 	AsyncOperation asyn;
 	IEnumerator LoadScene()//try again

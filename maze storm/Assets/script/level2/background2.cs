@@ -91,6 +91,14 @@ public class background2 : MonoBehaviour {
 		{
 			Vector2 door = Camera.main.WorldToScreenPoint(new Vector2(480,500));//以传送门为参照物
 			moneyscript.walk = false;
+
+			int temlevel = PlayerPrefs.GetInt ("LEVEL");
+			if( temlevel == level)
+			{
+				temlevel++;
+				PlayerPrefs.SetInt ("LEVEL",temlevel);
+			}
+
 			GUI.Label(new Rect(door.x-100,door.y - 400,200,30),"You Won",bb);
 			if(GUI.Button(new Rect(door.x-100,door.y - 300,190,79),nextImage))
 			{
