@@ -1,22 +1,23 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\selectlevel\select_9.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\level16\background16.cs">
     <Files>
-      <File FileName="Assets\script\selectlevel\select_1.cs" Line="14" Column="3" />
-      <File FileName="Assets\script\selectlevel\select_10.cs" Line="4" Column="41" />
-      <File FileName="Assets\script\selectlevel\select_11.cs" Line="14" Column="40" />
-      <File FileName="Assets\script\selectlevel\select_12.cs" Line="14" Column="40" />
-      <File FileName="Assets\script\selectlevel\select_13.cs" Line="4" Column="41" />
-      <File FileName="Assets\script\selectlevel\select_14.cs" Line="14" Column="40" />
-      <File FileName="Assets\script\selectlevel\select_15.cs" Line="14" Column="40" />
-      <File FileName="Assets\script\selectlevel\select_2.cs" Line="4" Column="39" />
-      <File FileName="Assets\script\selectlevel\select_3.cs" Line="4" Column="40" />
-      <File FileName="Assets\script\selectlevel\select_4.cs" Line="4" Column="40" />
-      <File FileName="Assets\script\selectlevel\select_5.cs" Line="4" Column="40" />
-      <File FileName="Assets\script\selectlevel\select_6.cs" Line="4" Column="40" />
-      <File FileName="Assets\script\selectlevel\select_7.cs" Line="4" Column="40" />
-      <File FileName="Assets\script\selectlevel\select_8.cs" Line="4" Column="40" />
-      <File FileName="Assets\script\selectlevel\select_9.cs" Line="4" Column="40" />
+      <File FileName="Assets\script\level1\background.cs" Line="83" Column="3" />
+      <File FileName="Assets\script\level2\background2.cs" Line="84" Column="88" />
+      <File FileName="Assets\script\level3\background3.cs" Line="22" Column="35" />
+      <File FileName="Assets\script\level4\background4.cs" Line="85" Column="88" />
+      <File FileName="Assets\script\level5\background5.cs" Line="85" Column="88" />
+      <File FileName="Assets\script\level6\background6.cs" Line="85" Column="88" />
+      <File FileName="Assets\script\level7\background7.cs" Line="85" Column="88" />
+      <File FileName="Assets\script\level8\background8.cs" Line="85" Column="88" />
+      <File FileName="Assets\script\level9\background9.cs" Line="84" Column="88" />
+      <File FileName="Assets\script\level10\background10.cs" Line="85" Column="88" />
+      <File FileName="Assets\script\level11\background11.cs" Line="84" Column="88" />
+      <File FileName="Assets\script\level12\background12.cs" Line="80" Column="88" />
+      <File FileName="Assets\script\level13\background13.cs" Line="80" Column="88" />
+      <File FileName="Assets\script\level14\background14.cs" Line="84" Column="88" />
+      <File FileName="Assets\script\level15\background15.cs" Line="85" Column="88" />
+      <File FileName="Assets\script\level16\background16.cs" Line="85" Column="88" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

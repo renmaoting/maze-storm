@@ -80,8 +80,8 @@ public class background9 : MonoBehaviour {
 		GameObject infoobj = GameObject.Find ("info"); //调用脚本info中的地图
 		Vector2 infopos =  infoobj.transform.position;
 		Vector2 container = Camera.main.WorldToScreenPoint(new Vector2(infopos.x,0));//以容器参照物
-		GUI.Label(new Rect(container.x,container.y,200,100),"关卡："+level,aa);
-		GUI.Label(new Rect(container.x,container.y +70,200,100),"剩余障碍："+avalueblock,aa);
+		GUI.Label(new Rect(container.x,container.y,200,100),"Level："+level,aa);
+		GUI.Label(new Rect(container.x,container.y +70,200,100),"Remainder："+avalueblock,aa);
 
 		vec.x = x * 64;
 		vec.y = (9 - y) * 64;
